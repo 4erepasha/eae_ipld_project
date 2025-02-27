@@ -12,7 +12,7 @@ st.set_page_config(
 def home_page():
     # ----- Left menu -----
     with st.sidebar:
-        st.image("eae_ipld_project/data/eae_img.png", width=200)
+        st.image("eae_ipld_project/eae_img.png", width=200)
         st.header("Introduction to Programming Languages for Data")
         st.write("###")
         st.write("***Final Project - Feb 2025***")
@@ -25,7 +25,7 @@ def home_page():
 
 
     # ----- Profile image file -----
-    profile_image_file_path = "eae_ipld_project/data/profile.png"
+    profile_image_file_path = "eae_ipld_project/profile.png"
 
     with open(profile_image_file_path, "rb") as img_file:
         img = "data:image/png;base64," + base64.b64encode(img_file.read()).decode()
@@ -73,8 +73,8 @@ def home_page():
 # This is ensambling the entire app with the different pages and the navigation menu
 pg = st.navigation([
     st.Page(home_page, title="Home", icon="👋"),
-    st.Page("eae_ipld_project/data/development/01_image_cropper.py", title="Image Cropper", icon="🖼️"),
-    st.Page("eae_ipld_project/data/development/02_netflix_data_analysis.py", title="Netflix Data Analysis", icon="🎬"),
-    st.Page("eae_ipld_project/data/development/03_temperatures_dashboard.py", title="Temperatures Dashboard", icon="🌦️"),
+    st.Page("eae_ipld_project/development/01_image_cropper.py", title="Image Cropper", icon="🖼️"),
+    st.Page("eae_ipld_project/development/02_netflix_data_analysis.py", title="Netflix Data Analysis", icon="🎬"),
+    st.Page("eae_ipld_project/development/03_temperatures_dashboard.py", title="Temperatures Dashboard", icon="🌦️"),
 ])
 pg.run()

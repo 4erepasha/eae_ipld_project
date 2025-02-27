@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import streamlit as st
 
 
-data_path = r"C:\Users\chere\OneDrive\Desktop\IPLDEAE\eae_ipld_project\data\cities_temperatures.csv"
+data_path = "eae_ipld_project/data/cities_temperatures.csv"
 
 temps_df = pd.read_csv(data_path)
 
