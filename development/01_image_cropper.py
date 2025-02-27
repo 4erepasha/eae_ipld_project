@@ -4,7 +4,7 @@ from PIL import Image
 import matplotlib.pyplot as plt
 
 
-img_path = "eae_ipld_project/data/starry_night.png"
+img_path = "data/starry_night.png"
 
 with Image.open(img_path) as img:
     img_arr = np.array(img)
@@ -42,7 +42,7 @@ crop_img = Image.fromarray(crop_arr)
 
 file_name = 'cropped_starry_night'
 
-crop_img.save(f"eae_ipld_project/data/{file_name}.png")
+crop_img.save(f"data/{file_name}.png")
 
 'After cropping'
 

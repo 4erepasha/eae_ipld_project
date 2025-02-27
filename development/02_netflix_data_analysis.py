@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import streamlit as st
 
 
-data_path = "eae_ipld_project/data/netflix_titles.csv"
+data_path = "data/netflix_titles.csv"
 
 movies_df = pd.read_csv(data_path)
 
